@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Times New Roman', serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-size: cover;
+  color: #000000;
+  transition: background-image 1s ease-in-out;
+}
+
+.city {
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+
+.time {
+  font-size: 5rem;
+}
+
+h1 {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
+}
+
+.name,
+.focus {
+  display: inline-block;
+  min-width: 3rem;
+}
+
+#button {
+  position: fixed;
+  right: 0;
+  margin-right: 3rem;
+  padding: 1rem;
+  font-size: 2rem;
+  border: 3px white solid;
+  border-radius: 50%;
+  background: none;
+  color: white;
+  outline: none;
+}
+
+.quote {
+  width: 16rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-left: 3rem;
+  font-size: 2rem;
+  opacity: 0.7;
+  border: white 2px solid;
+  border-radius: 25%;
+}
+
+.quote-button {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 6rem;
+  margin-left: 0.5rem;
+  font-size: 2rem;
+  background: none;
+  color: white;
+  border-radius: 50%;
+  border: 3px white solid;
+  outline: none;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: green;
+}
+
+.quote-button:hover {
+  cursor: pointer;
+  background-color: green;
+}
+
+.weather {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-right: 5rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 700px) {
+  .time {
+    font-size: 6rem;
+  }
+}
